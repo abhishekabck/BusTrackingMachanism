@@ -4,17 +4,13 @@
     <meta charset="UTF-8">
     <meta name="description" content="College Bus Tracking System for Students and Staff">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  type="image/x-icon" href="{{ url_for('static', filename = 'images/favicon.png') }}">
     {% block head %}{% endblock %}
     <title>{% block title %} {{ title | default("College Bus Tracking System") }} {% endblock %}</title>
 </head>
 <body>
   <header>
     {% block header %}
-        <nav>
-            <a href="{{ url_for('home') }}">Home</a>
-            <a href="{{ url_for('login') }}">Login</a>
-            <a href="{{ url_for('signup') }}">Sign Up</a>
-        </nav>
     {% endblock %}
   </header>
   <section class="Body-content">

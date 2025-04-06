@@ -1,7 +1,7 @@
 from flask import Flask, request, url_for, render_template
 from html import escape
 
-app = Flask(__name__, static_folder='static', template_folder='templates')
+app = Flask(__name__, static_folder='statics', template_folder='templates')
 
 
 
@@ -11,4 +11,4 @@ def index():
 
 @app.route('/Login')
 def login_menu():
-    return render_template('LoginMenu.html')
+    return render_template('LoginMenu.html', title="Login | College BusTracker ")
