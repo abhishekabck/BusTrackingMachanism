@@ -12,3 +12,11 @@ def index():
 @app.route('/Login')
 def login_menu():
     return render_template('LoginMenu.html', title="Login | College BusTracker ")
+
+@app.route('/SignUp')
+def signup_menu():
+    return render_template('SignUpMenu.html', title="SignUp | College BusTracker ")
+
+@app.route('/student-signup')
+def student_signup():
+    return render_template('SignUpStudent.html', title="SignUp | Student | College BusTracker ")

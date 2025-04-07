@@ -1,0 +1,26 @@
+{% extends "components/MasterTemp.html" %}
+{% block header %} This is Header {% endblock %}
+{% block body_section %}
+<form action="POST" class="form-container">
+  <label class="f-name">
+    <span>FullName</span>
+    <input type="text" placeholder="FullName" name="f_name" required>
+  </label>
+
+  <label class="f-sid">
+    <span>Student Id/RollNo</span>
+    <input type="number" name="sid" required>
+  </label>
+
+  <label class="f-collegename">
+    <span>StudentId</span>
+    <input type="text" placeholder="FullName" name="f_name" required>
+  </label>
+
+  <label class="f-name">
+    <span>FullName</span>
+    <input type="text" placeholder="FullName" name="f_name" required>
+  </label>
+
+</form>
+{% endblock %}

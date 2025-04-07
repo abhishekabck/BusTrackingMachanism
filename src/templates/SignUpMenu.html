@@ -1,0 +1,9 @@
+{% extends "components/MasterTemp.html" %}
+{% block header %} This is Header {% endblock %}
+{% block body_section %}
+This is SignUp Menu
+<ul>
+    <li><a href="{{ url_for('student_signup')}}">SignUp As Student</a></li>
+
+</ul>
+{% endblock %}
